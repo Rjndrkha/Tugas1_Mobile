@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+
 public class HalamanEmpat extends AppCompatActivity {
 
     @Override
@@ -17,6 +18,9 @@ public class HalamanEmpat extends AppCompatActivity {
     public void Login(View view) {
         Intent i = new Intent(HalamanEmpat.this, Berhasil.class);
         startActivity(i);
+
+        //AMBIL DATA USERNAME
+
     }
 
     public void Register(View view) {

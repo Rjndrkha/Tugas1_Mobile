@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tugas1_Rajendra">
         <activity
+            android:name=".About"
+            android:exported="true"
+            android:label="@string/title_activity_about"
+            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
+        <activity
             android:name=".Register"
             android:exported="true" />
         <activity

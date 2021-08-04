@@ -21,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        }, 1000);
+        }, 5000);
     }
 
     @Override
     protected void onStart(){
         super.onStart();
-        Toast.makeText(this , "Rajendra Rakha Arya Prabaswara", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this , "Rajendra Rakha Arya Prabaswara", Toast.LENGTH_LONG).show();
     }
 
 }
