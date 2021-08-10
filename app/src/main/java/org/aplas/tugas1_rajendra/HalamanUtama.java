@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
@@ -81,6 +82,11 @@ public class HalamanUtama extends AppCompatActivity {
             Toast.makeText(this, "Logout Success", Toast.LENGTH_SHORT).show();
         }
         return true;
+    }
+
+    public void Calculator(View view){
+
+        startActivity(new Intent(this,CalculatorApp.class));
     }
 
 

@@ -9,9 +9,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tugas1_Rajendra">
         <activity
-            android:name=".HalamanUtama"
-            android:label="Dashboard"
+            android:name=".CalculatorApp"
+            android:label="Calculator"
             android:exported="true" />
+        <activity
+            android:name=".HalamanUtama"
+            android:exported="true"
+            android:label="Dashboard" />
         <activity
             android:name=".About"
             android:exported="true"
@@ -49,7 +53,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
