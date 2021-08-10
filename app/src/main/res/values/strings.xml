@@ -9,4 +9,14 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="slide_1_title">100% Secure</string>
+    <string name="slide_1_desc">We provide online medicine
+        sales services in all cities in Indonesia,The medicine here are guaranteed to
+        be 100% legal and have received permission from the government</string>
+
+    <string name="slide_2_title">R Med Store</string>
+    <string name="slide_2_desc">Just stay at home and order our crew will deliver</string>
+    <string name="skip">Skip</string>
+
 </resources>

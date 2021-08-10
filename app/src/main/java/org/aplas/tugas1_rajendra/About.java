@@ -1,7 +1,5 @@
 package org.aplas.tugas1_rajendra;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,6 +7,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class About extends AppCompatActivity {
 
@@ -21,7 +21,7 @@ public class About extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
-        Toast.makeText(this , "\u2667 WELCOME TO MY APP \u2667", Toast.LENGTH_LONG).show();
+        Toast.makeText(this , "\u2665 WELCOME TO MY APP \u2665", Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -46,8 +46,17 @@ public class About extends AppCompatActivity {
     }
 
     public void ClickBack(View view){
-        Intent i = new Intent(About.this, Berhasil.class);
+        Intent i = new Intent(About.this, HalamanUtama.class);
         startActivity(i);
+    }
+
+    public void clickContactUs(View view) {
+        Intent i = new Intent(Intent.ACTION_SEND);
+        i.setType("text/plain");
+        i.putExtra(Intent.EXTRA_EMAIL, new String[]{"rajendra.rakha29@gmail.com"});
+        i.putExtra(Intent.EXTRA_SUBJECT, "Hello Rajendra, I Want Ask Question \u2665");
+        i.putExtra(Intent.EXTRA_TEXT, "Hello Rajendra\n\n");
+        startActivity(i.createChooser(i, "Pilih email client"));
     }
 
 }

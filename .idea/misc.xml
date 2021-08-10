@@ -4,13 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/drawable/button_red.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/Login.xml" value="0.1203125" />
         <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/activity_about.xml" value="0.25" />
         <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/activity_berhasil.xml" value="0.22" />
         <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/activity_halaman_dua.xml" value="0.25" />
         <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/activity_halaman_empat.xml" value="0.25" />
         <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/activity_halaman_tiga.xml" value="0.221875" />
+        <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/activity_halaman_utama.xml" value="0.221875" />
         <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/activity_register.xml" value="0.221875" />
+        <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/activity_welcome.xml" value="0.221875" />
+        <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/layout/list_view.xml" value="0.9" />
         <entry key="..\:/Android/Tugas1_Rajendra/app/src/main/res/menu/optionmenu.xml" value="0.21822916666666667" />
       </map>
     </option>

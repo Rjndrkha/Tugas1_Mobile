@@ -11,22 +11,21 @@
         android:layout_height="wrap_content"
         android:background="@drawable/pinclipart_com_polka_dots_clip_art_1086553"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
 
         />
 
     <ImageView
+        android:id="@+id/me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:background="@drawable/_941720080"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="100dp"
-        android:id="@+id/me"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text1"
@@ -37,11 +36,12 @@
         android:text="Dibuat Oleh Peserta DTS\n\nNama : Rajendra Rakha Arya P\n
         \n\t\t\t\t\t\t\t\t\t\t\tKelas: Mobile 3\t\t\t\t\t\t\t\t\t\t\t"
         android:textAlignment="center"
-        android:textSize="18dp"
         android:textColor="@color/black"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/me" />
+
 
     <ImageView
         android:id="@+id/gambar2"
@@ -54,19 +54,35 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text1"
-         />
+        app:layout_constraintVertical_bias="0.527" />
+
+    <TextView
+        android:id="@+id/tv_contact_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:onClick="clickContactUs"
+        android:text="Contact Me"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="165dp" />
+
+
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_red"
+        android:onClick="ClickBack"
         android:text="BACK"
         app:layout_constraintBottom_toBottomOf="@+id/gambar2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/gambar2"
-        app:layout_constraintVertical_bias="0.599"
-        android:onClick="ClickBack"
-        />
+        app:layout_constraintVertical_bias="0.405" />
 </androidx.constraintlayout.widget.ConstraintLayout>

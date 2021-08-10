@@ -6,48 +6,50 @@
         android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
-
         android:supportsRtl="true"
         android:theme="@style/Theme.Tugas1_Rajendra">
         <activity
+            android:name=".HalamanUtama"
+            android:label="Dashboard"
+            android:exported="true" />
+        <activity
             android:name=".About"
             android:exported="true"
-            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar"
             android:label="@string/title_activity_about"
-            />
+            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
         <activity
             android:name=".Register"
+            android:exported="true"
             android:label="Register"
-
-            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar"
-            android:exported="true" />
+            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
         <activity
             android:name=".Berhasil"
-            android:label="Berhasil"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Berhasil" />
         <activity
             android:name=".HalamanEmpat"
-            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
         <activity
             android:name=".HalamanTiga"
-            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
         <activity
             android:name=".HalamanDua"
-            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:label="DTS_Rajendra Rakha"
-            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar"
-            android:exported="true">
+            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
