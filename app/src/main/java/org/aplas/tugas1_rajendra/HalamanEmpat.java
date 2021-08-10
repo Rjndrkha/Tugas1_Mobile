@@ -19,7 +19,7 @@ public class HalamanEmpat extends AppCompatActivity {
         private EditText editTextPassword;
         private EditText editTextUsername;
 
-        private final String TAG =HalamanEmpat.class.getName();
+        private final String TAG =Register.class.getName();
         public static final String Key_Register="Key_Register";
 
 
@@ -40,7 +40,7 @@ public class HalamanEmpat extends AppCompatActivity {
 
     public void Login(View view) {
         String username=editTextUsername.getText().toString();
-
+        String email="Null";
 
 
         //validasi input password kosong
@@ -53,7 +53,7 @@ public class HalamanEmpat extends AppCompatActivity {
         }
         else {
             Intent i = new Intent(HalamanEmpat.this, Berhasil.class);
-            i.putExtra(Key_Register,new String[]{username});
+            i.putExtra(Key_Register,new String[]{username,email});
             startActivity(i);
             Toast.makeText(this, "Log-in Success", Toast.LENGTH_SHORT).show();
         }

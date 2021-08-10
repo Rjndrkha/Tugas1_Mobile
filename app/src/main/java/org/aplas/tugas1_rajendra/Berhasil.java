@@ -38,14 +38,12 @@ public class Berhasil extends AppCompatActivity {
 
         //Get String
         String[] stringArray=getIntent().getStringArrayExtra(Register.Key_Register);
+
         //Set Value ke Text
         txtUser.setText("Hello "+stringArray[0]+" \u2665");
 
-        if(txtEmail=null){
-            txtEmail.setText("Null");
-        }else {
-            txtUser.setText(stringArray[1]);
-        }
+        txtEmail.setText(stringArray[1]);
+
 
 
 
