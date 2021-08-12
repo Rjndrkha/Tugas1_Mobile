@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#233137"
     tools:context=".CalculatorApp">
 
 
@@ -12,8 +12,7 @@
         android:id="@+id/relativeLayout1"
         android:layout_width="412dp"
         android:layout_height="243dp"
-
-        android:background="@color/white"
+        android:background="@drawable/wallpaper"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,35 +20,37 @@
 
         <TextView
             android:id="@+id/text1"
-            android:layout_width="79dp"
-            android:layout_height="36dp"
+            android:layout_width="130dp"
+            android:layout_height="20dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="14dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="318dp"
-            android:layout_marginBottom="206dp"
+            android:layout_marginEnd="268dp"
+            android:layout_marginBottom="207dp"
             android:fontFamily="sans-serif-condensed-medium"
-            android:text="Input 1"
-            android:textColor="@color/black" />
+            android:text="R'App Calculator"
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/text2"
-            android:layout_width="79dp"
-            android:layout_height="36dp"
+            android:layout_width="54dp"
+            android:layout_height="22dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="13dp"
-            android:layout_marginTop="130dp"
-            android:layout_marginEnd="319dp"
-            android:layout_marginBottom="92dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="114dp"
             android:fontFamily="sans-serif-condensed-medium"
-            android:text="Input 2"
-            android:textColor="@color/black" />
+            android:text="..."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/input1"
@@ -60,13 +61,16 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="14dp"
-            android:layout_marginTop="53dp"
+            android:layout_marginTop="39dp"
             android:layout_marginEnd="31dp"
-            android:layout_marginBottom="134dp"
+            android:layout_marginBottom="148dp"
+            android:backgroundTint="@color/white"
             android:ems="10"
-            android:hint="Input Number"
+            android:hint="0"
             android:inputType="number"
             android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:textSize="25dp" />
 
         <EditText
@@ -77,68 +81,101 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="162dp"
-            android:layout_marginEnd="31dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="61dp"
+            android:backgroundTint="@color/white"
             android:ems="10"
-            android:hint="Input Number"
+            android:hint="0"
             android:inputType="number"
             android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:textSize="25dp" />
 
     </RelativeLayout>
 
-
-    <Button
+    <ImageButton
         android:id="@+id/Clear"
-        android:layout_width="170dp"
-        android:layout_height="80dp"
-
-        android:layout_marginTop="8dp"
-        android:background="@mipmap/icon_bulat"
-        android:onClick="Clear"
-        android:text="Clear"
-        android:textSize="30dp"
-        app:layout_constraintHorizontal_bias="0.497"
-        android:layout_marginBottom="30dp"
-
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="200dp"
+        android:background="@mipmap/icon_refresh"
+        android:onClick="Refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1" />
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout1"
+        app:layout_constraintVertical_bias="0.042" />
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="409dp"
-        android:layout_height="382dp"
-        android:layout_marginTop="1000dp"
-        android:layout_marginBottom="4dp"
-        android:background="@color/dot_light_screen3"
+    <ImageButton
+        android:id="@+id/Tambah"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="200dp"
+        android:background="@mipmap/icon_add"
+        android:onClick="Tambah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout1"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <ImageButton
+        android:id="@+id/Kurang"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="200dp"
+        android:background="@mipmap/icon_minus"
+        android:onClick="Kurang"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout1"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <ImageButton
+        android:id="@+id/Kali"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="200dp"
+        android:background="@mipmap/icon_x"
+        android:onClick="Kali"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout1"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <ImageButton
+        android:id="@+id/Bagi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="200dp"
+        android:background="@mipmap/icon_bagi"
+        android:onClick="Bagi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout1"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="372dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_purple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Clear"
-        app:layout_constraintVertical_bias="0.984">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="58dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="133dp"
-            android:layout_marginTop="110dp"
-            android:layout_marginEnd="131dp"
-            android:layout_marginBottom="214dp"
-            android:fontFamily="sans-serif-black"
-            android:text="RESULT"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30dp" />
-
-
-    </RelativeLayout>
+        app:layout_constraintTop_toBottomOf="@id/Clear"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
