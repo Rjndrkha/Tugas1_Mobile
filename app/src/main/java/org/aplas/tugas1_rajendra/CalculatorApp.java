@@ -33,7 +33,7 @@ public class CalculatorApp extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        super.startActivity(new Intent(this ,HalamanUtama.class));
+        finish();
     }
 
     @Override

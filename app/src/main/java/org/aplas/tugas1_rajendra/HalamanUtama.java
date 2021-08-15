@@ -41,11 +41,12 @@ public class HalamanUtama extends AppCompatActivity {
 
         data = new ArrayList<>();
         for (int i = 0; i < MyItem.Headline.length; i++) {
-            data.add(new ItemModel(MyItem.Headline[i],
+            data.add(new ItemModel(
+                    MyItem.Headline[i],
                     MyItem.Caption[i],
                     MyItem.Gambar[i]));
         }
-        adapter=new ItemAdapter(data);
+        adapter=new ItemAdapter(this,data);
         recyclerView.setAdapter(adapter);
     }
 
