@@ -43,7 +43,7 @@ public class HalamanUtama extends AppCompatActivity {
         for (int i = 0; i < MyItem.Headline.length; i++) {
             data.add(new ItemModel(
                     MyItem.Headline[i],
-                    MyItem.Caption[i],
+                    MyItem.Caption[0],
                     MyItem.Gambar[i]));
         }
         adapter=new ItemAdapter(this,data);
