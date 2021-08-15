@@ -10,7 +10,7 @@
 
 ### **SD 3-Clause License**
 ```diff
-- Copyright (c) 2021, Rajendra Rakha 
+- Copyright (c) 2021, Rajendra Rakha Arya P
 - All rights reserved.
 
 ```
