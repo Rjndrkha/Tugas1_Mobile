@@ -14,6 +14,9 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.aplas.tugas1_rajendra.calculator.CalculatorApp;
+import org.aplas.tugas1_rajendra.login_register.HalamanEmpat;
+
 import java.util.ArrayList;
 
 public class HalamanUtama extends AppCompatActivity {
@@ -78,7 +81,7 @@ public class HalamanUtama extends AppCompatActivity {
         if(item.getItemId()==R.id.clkabout){
             startActivity(new Intent(this,About.class));
         }else if(item.getItemId()==R.id.clkout){
-            startActivity(new Intent(this,HalamanEmpat.class));
+            startActivity(new Intent(this, HalamanEmpat.class));
 
             Toast.makeText(this, "Logout Success", Toast.LENGTH_SHORT).show();
         }
@@ -87,7 +90,7 @@ public class HalamanUtama extends AppCompatActivity {
 
     public void Calculator(View view){
 
-        startActivity(new Intent(this,CalculatorApp.class));
+        startActivity(new Intent(this, CalculatorApp.class));
     }
 
 

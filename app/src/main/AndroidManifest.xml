@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.aplas.tugas1_rajendra">
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -9,11 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tugas1_Rajendra">
         <activity
-            android:name=".MainCalculator"
-            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar"
+            android:name=".persistance_data.Internal"
+            android:label="Internal Data"
+
             android:exported="true" />
         <activity
-            android:name=".CalculatorApp"
+            android:name=".calculator.MainCalculator"
+            android:exported="true"
+            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
+        <activity
+            android:name=".calculator.CalculatorApp"
             android:exported="true"
             android:label="Calculator" />
         <activity
@@ -26,7 +34,7 @@
             android:label="@string/title_activity_about"
             android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
         <activity
-            android:name=".Register"
+            android:name=".login_register.Register"
             android:exported="true"
             android:label="Register"
             android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
@@ -35,7 +43,7 @@
             android:exported="true"
             android:label="Berhasil" />
         <activity
-            android:name=".HalamanEmpat"
+            android:name=".login_register.HalamanEmpat"
             android:exported="true"
             android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
         <activity
@@ -60,3 +68,4 @@
     </application>
 
 </manifest>
+

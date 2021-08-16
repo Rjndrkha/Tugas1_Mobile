@@ -1,4 +1,4 @@
-package org.aplas.tugas1_rajendra;
+package org.aplas.tugas1_rajendra.login_register;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.aplas.tugas1_rajendra.Berhasil;
+import org.aplas.tugas1_rajendra.R;
+
 
 public class Register extends AppCompatActivity {
 

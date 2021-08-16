@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.aplas.tugas1_rajendra.login_register.HalamanEmpat;
+
 public class About extends AppCompatActivity {
 
     @Override
@@ -38,7 +40,7 @@ public class About extends AppCompatActivity {
         if(item.getItemId()==R.id.clkabout){
             startActivity(new Intent(this,About.class));
         }else if(item.getItemId()==R.id.clkout){
-            startActivity(new Intent(this,HalamanEmpat.class));
+            startActivity(new Intent(this, HalamanEmpat.class));
 
             Toast.makeText(this, "Logout Success", Toast.LENGTH_SHORT).show();
         }

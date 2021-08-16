@@ -13,6 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.aplas.tugas1_rajendra.calculator.MainCalculator;
+import org.aplas.tugas1_rajendra.persistance_data.Internal;
+
 import java.util.ArrayList;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
@@ -64,9 +67,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
         holder.Parent.setOnClickListener(v ->{
 
-            if(Data.get(position).getNama().equals("R Calculator")){
-                Toast.makeText(context,"Redirecting To "+ Data.get(position).getNama(), Toast.LENGTH_LONG).show();
-                context.startActivity(new Intent(context ,MainCalculator.class));
+            if(Data.get(position).getNama().equals("R Calculator")) {
+                Toast.makeText(context, "Redirecting To " + Data.get(position).getNama(), Toast.LENGTH_LONG).show();
+                context.startActivity(new Intent(context, MainCalculator.class));
+            }else if(Data.get(position).getNama().equals("Persistence App")){
+                Toast.makeText(context, "Redirecting To " + Data.get(position).getNama(), Toast.LENGTH_LONG).show();
+                context.startActivity(new Intent(context, Internal.class));
 
             }else{
                 Toast.makeText(context,"App "+Data.get(position).getNama(), Toast.LENGTH_SHORT).show();

@@ -1,4 +1,4 @@
-package org.aplas.tugas1_rajendra;
+package org.aplas.tugas1_rajendra.login_register;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.aplas.tugas1_rajendra.Berhasil;
+import org.aplas.tugas1_rajendra.R;
+
 
 public class HalamanEmpat extends AppCompatActivity {
 
@@ -19,7 +22,7 @@ public class HalamanEmpat extends AppCompatActivity {
         private EditText editTextPassword;
         private EditText editTextUsername;
 
-        private final String TAG =Register.class.getName();
+        private final String TAG = Register.class.getName();
         public static final String Key_Register="Key_Register";
 
 

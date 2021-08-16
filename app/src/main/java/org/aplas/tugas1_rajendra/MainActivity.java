@@ -7,6 +7,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.aplas.tugas1_rajendra.login_register.HalamanEmpat;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

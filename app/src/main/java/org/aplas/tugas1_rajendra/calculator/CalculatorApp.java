@@ -1,4 +1,4 @@
-package org.aplas.tugas1_rajendra;
+package org.aplas.tugas1_rajendra.calculator;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.aplas.tugas1_rajendra.About;
+import org.aplas.tugas1_rajendra.login_register.HalamanEmpat;
+import org.aplas.tugas1_rajendra.R;
 
 public class CalculatorApp extends AppCompatActivity {
 
@@ -47,9 +51,9 @@ public class CalculatorApp extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if(item.getItemId()==R.id.clkabout){
-            startActivity(new Intent(this,About.class));
+            startActivity(new Intent(this, About.class));
         }else if(item.getItemId()==R.id.clkout){
-            startActivity(new Intent(this,HalamanEmpat.class));
+            startActivity(new Intent(this, HalamanEmpat.class));
 
             Toast.makeText(this, "Logout Success", Toast.LENGTH_SHORT).show();
         }
