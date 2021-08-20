@@ -53,7 +53,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         mMap.addMarker(new MarkerOptions().position(place)
                 .title("Alun-Alun Kota Batu")
-                .icon( BitmapDescriptorFactory.fromResource(R.drawable.daco_23844_removebg_preview)));
+                .icon( BitmapDescriptorFactory.fromResource(R.mipmap.ic_location_round)));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(place, zoomLevel));
     }

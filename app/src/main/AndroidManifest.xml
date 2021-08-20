@@ -18,7 +18,7 @@
         android:icon="@mipmap/icon_black"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Tugas1_Rajendra" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".maps.MainActivity"
             android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar"
