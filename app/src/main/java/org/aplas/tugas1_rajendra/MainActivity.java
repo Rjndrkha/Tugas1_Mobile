@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.aplas.tugas1_rajendra.login_register.HalamanEmpat;
+import org.aplas.tugas1_rajendra.maps.MapsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(MainActivity.this, HalamanUtama.class);
+                Intent i = new Intent(MainActivity.this,  HalamanUtama.class);
                 startActivity(i);
                 finish();
             }

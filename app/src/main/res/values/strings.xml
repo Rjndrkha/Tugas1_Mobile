@@ -18,5 +18,6 @@
     <string name="slide_2_title">R Med Store</string>
     <string name="slide_2_desc">Just stay at home and order our crew will deliver</string>
     <string name="skip">Skip</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>
