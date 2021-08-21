@@ -1,4 +1,4 @@
-package org.aplas.tugas1_rajendra;
+package org.aplas.tugas1_rajendra.recycle_data;
 
 public class ItemModel {
 

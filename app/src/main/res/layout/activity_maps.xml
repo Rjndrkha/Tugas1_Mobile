@@ -25,21 +25,21 @@
             android:id="@+id/Koordinat"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
+            android:layout_margin="1dp"
             android:background="@color/black"
-            android:textColor="@color/white"
-            android:layout_margin="3dp"
             android:text="My Coordinate"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/Location"
-            android:layout_width="180dp"
+            android:layout_width="184dp"
             android:layout_height="wrap_content"
+            android:layout_margin="1dp"
             android:background="@color/black"
-            android:layout_margin="3dp"
-            android:textColor="@color/white"
             android:text="My Location"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

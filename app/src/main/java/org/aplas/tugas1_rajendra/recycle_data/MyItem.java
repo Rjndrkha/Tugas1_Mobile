@@ -1,19 +1,21 @@
-package org.aplas.tugas1_rajendra;
+package org.aplas.tugas1_rajendra.recycle_data;
+
+import org.aplas.tugas1_rajendra.R;
 
 public class MyItem {
 
-    static int[] Gambar={
+    public static int[] Gambar={
             R.mipmap.calculator,
             R.mipmap.icon_black,
             R.drawable.daco_23844_removebg_preview
     };
 
-    static String[] Headline={
+    public static String[] Headline={
             "R Calculator","Persistence App","R Location Detected"
 
     };
 
-    static String[] Caption={
+    public static String[] Caption={
             "All-In One R'Apps"
     };
 

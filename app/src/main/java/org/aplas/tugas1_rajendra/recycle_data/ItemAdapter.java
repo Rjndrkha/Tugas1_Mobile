@@ -1,4 +1,4 @@
-package org.aplas.tugas1_rajendra;
+package org.aplas.tugas1_rajendra.recycle_data;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.aplas.tugas1_rajendra.R;
 import org.aplas.tugas1_rajendra.calculator.MainCalculator;
 import org.aplas.tugas1_rajendra.persistance_data.Internal;
 import org.aplas.tugas1_rajendra.maps.MainActivity ;
@@ -41,7 +42,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         }
     }
 
-    ItemAdapter(Context context,ArrayList<ItemModel> Data){
+    public ItemAdapter(Context context,ArrayList<ItemModel> Data){
         this.context=context;
 
         this.Data=Data;
