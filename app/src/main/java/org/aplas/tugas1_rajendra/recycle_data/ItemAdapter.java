@@ -78,6 +78,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
             }else if(Data.get(position).getNama().equals("R Location Detected")){
                 Toast.makeText(context, "Redirecting To " + Data.get(position).getNama(), Toast.LENGTH_LONG).show();
                 context.startActivity(new Intent(context,MainActivity.class));
+            }else if(Data.get(position).getNama().equals("Save You'R Contact")){
+                Toast.makeText(context, "Redirecting To " + Data.get(position).getNama(), Toast.LENGTH_LONG).show();
+                context.startActivity(new Intent(context,MainActivity.class));
 
             }else{
                 Toast.makeText(context,"App "+Data.get(position).getNama(), Toast.LENGTH_SHORT).show();

@@ -7,11 +7,12 @@ public class MyItem {
     public static int[] Gambar={
             R.mipmap.calculator,
             R.mipmap.icon_black,
-            R.drawable.daco_23844_removebg_preview
+            R.drawable.daco_23844_removebg_preview,
+            R.mipmap.icon_black
     };
 
     public static String[] Headline={
-            "R Calculator","Persistence App","R Location Detected"
+            "R Calculator","Persistence App","R Location Detected","Save You'R Contact"
 
     };
 

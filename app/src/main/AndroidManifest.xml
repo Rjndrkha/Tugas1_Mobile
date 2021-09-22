@@ -38,7 +38,7 @@
         <activity
             android:name=".maps.MapsActivity"
             android:exported="true"
-            android:label="@string/title_activity_maps" />
+            android:label="R Maps" />
         <activity
             android:name=".persistance_data.Internal"
             android:exported="true"

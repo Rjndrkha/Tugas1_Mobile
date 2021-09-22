@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:id="@+id/root"
+    android:id="@+id/home_root"
     android:weightSum="10">
 
     <fragment
@@ -11,6 +12,7 @@
         android:layout_width="match_parent"
         android:id="@+id/map"
         android:layout_height="400dp"
+        tools:context=".MapsActivity"
         />
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +24,7 @@
         >
 
         <Button
-            android:id="@+id/Koordinat"
+            android:id="@+id/btn_koordinat"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
@@ -32,7 +34,7 @@
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/Location"
+            android:id="@+id/btn_posisi_user"
             android:layout_width="184dp"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
