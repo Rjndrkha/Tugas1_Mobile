@@ -6,8 +6,13 @@
           android:id="@+id/clkabout"
         />
 
+    <item android:title="Home"
+        android:id="@+id/clkhome"
+        />
+
     <item android:title="Logout"
         android:id="@+id/clkout"
         />
+
 
 </menu>

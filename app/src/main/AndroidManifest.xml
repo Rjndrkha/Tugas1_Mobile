@@ -20,9 +20,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".maps.MainActivity"
-            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar"
+            android:name=".contact.AddEditActivity"
+            android:label="Edit Contact"
             android:exported="true" />
+        <activity
+            android:name=".contact.MainContact"
+            android:label="Save You'R Contact"
+            android:exported="true" />
+
+        <activity
+            android:name=".maps.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -46,7 +55,7 @@
         <activity
             android:name=".calculator.MainCalculator"
             android:exported="true"
-            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar"/>
+            android:theme="@style/Theme.Tugas1_Rajendra.NoActionBar" />
         <activity
             android:name=".calculator.CalculatorApp"
             android:exported="true"

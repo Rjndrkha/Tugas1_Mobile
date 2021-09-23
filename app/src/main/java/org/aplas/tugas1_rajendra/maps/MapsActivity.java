@@ -37,6 +37,7 @@ import com.google.android.gms.maps.model.LatLng;
 
 import org.aplas.tugas1_rajendra.About;
 import org.aplas.tugas1_rajendra.Berhasil;
+import org.aplas.tugas1_rajendra.HalamanUtama;
 import org.aplas.tugas1_rajendra.R;
 import org.aplas.tugas1_rajendra.login_register.HalamanEmpat;
 
@@ -286,6 +287,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             startActivity(new Intent(this, HalamanEmpat.class));
 
             Toast.makeText(this, "Logout Success", Toast.LENGTH_SHORT).show();
+        }else if(item.getItemId()==R.id.clkhome){
+            startActivity(new Intent(this, HalamanUtama.class));
         }
         return true;
     }

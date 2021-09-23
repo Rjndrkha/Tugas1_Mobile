@@ -14,6 +14,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.aplas.tugas1_rajendra.About;
+import org.aplas.tugas1_rajendra.HalamanUtama;
 import org.aplas.tugas1_rajendra.login_register.HalamanEmpat;
 import org.aplas.tugas1_rajendra.R;
 
@@ -71,6 +72,8 @@ public class CalculatorApp extends AppCompatActivity {
             startActivity(new Intent(this, HalamanEmpat.class));
 
             Toast.makeText(this, "Logout Success", Toast.LENGTH_SHORT).show();
+        }else if(item.getItemId()==R.id.clkhome){
+            startActivity(new Intent(this, HalamanUtama.class));
         }
         return true;
     }
