@@ -7,6 +7,7 @@
 ![SC 02H 21_08_2021 13 00 58](https://user-images.githubusercontent.com/75615789/130312309-d1640bbd-ebc4-4e08-a6d5-d8aa30c36016.png)
 ![SC 02H 21_08_2021 13 03 37](https://user-images.githubusercontent.com/75615789/130312327-1ce7eff2-3b96-4a93-af9e-5fd839676107.png)
 ![Screenshot (6408)](https://user-images.githubusercontent.com/75615789/129549156-0795d59c-8e25-4e42-98c9-f62cf4843f3a.png)
+![ss](https://user-images.githubusercontent.com/75615789/134472234-30857bc8-0c47-4a29-9ed5-e94d8743a558.jpeg)
 
 <br>
 
