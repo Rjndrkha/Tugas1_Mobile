@@ -87,6 +87,9 @@ public class HalamanUtama extends AppCompatActivity {
             startActivity(new Intent(this, HalamanEmpat.class));
 
             Toast.makeText(this, "Logout Success", Toast.LENGTH_SHORT).show();
+        }else if(item.getItemId()==R.id.clkhome){
+
+            Toast.makeText(this, "You Already In Home", Toast.LENGTH_SHORT).show();
         }
         return true;
     }

@@ -8,7 +8,7 @@ public class MyItem {
             R.mipmap.calculator,
             R.mipmap.icon_black,
             R.drawable.daco_23844_removebg_preview,
-            R.mipmap.icon_black
+            R.drawable.pngegg_removebg_preview__1_
     };
 
     public static String[] Headline={

@@ -13,11 +13,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.aplas.tugas1_rajendra.contact.MainContact;
+import org.aplas.tugas1_rajendra.contact.MainActivity3;
 import org.aplas.tugas1_rajendra.R;
 import org.aplas.tugas1_rajendra.calculator.MainCalculator;
+import org.aplas.tugas1_rajendra.contact.MainContact;
 import org.aplas.tugas1_rajendra.persistance_data.Internal;
 import org.aplas.tugas1_rajendra.maps.MainActivity ;
+
 
 import java.util.ArrayList;
 
@@ -81,7 +83,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
                 context.startActivity(new Intent(context,MainActivity.class));
             }else if(Data.get(position).getNama().equals("Save You'R Contact")){
                 Toast.makeText(context, "Redirecting To " + Data.get(position).getNama(), Toast.LENGTH_LONG).show();
-                context.startActivity(new Intent(context, MainContact.class));
+                context.startActivity(new Intent(context, MainActivity3.class));
 
             }else{
                 Toast.makeText(context,"App "+Data.get(position).getNama(), Toast.LENGTH_SHORT).show();
